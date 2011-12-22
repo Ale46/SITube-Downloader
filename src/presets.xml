@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+  Copyright (c) 2010 Ale46.
+  All rights reserved. This program and the accompanying materials
+  are made available under the terms of the GNU Public License v2.0
+  which accompanies this distribution, and is available at
+  http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+-->
+<presets>
+	
+     <mp3>
+    <label>MP3 (Only Audio)</label>
+    <vcodec></vcodec>
+    <acodec>libmp3lame</acodec>
+    <channel>2</channel>
+    <frequency>44100</frequency>
+    <tag></tag>
+    <extension>mp3</extension>
+    <category>Audio</category>
+  </mp3>
+
+
+  <wav>
+    <label>Wav for CD (Only Audio)</label>
+    <vcodec></vcodec>
+    <acodec>pcm_s16le</acodec>
+    <channel>2</channel>
+    <frequency>44100</frequency>
+    <tag></tag>
+    <extension>wav</extension>
+    <category>Audio</category>
+    </wav>
+	
+ 
+   <XviDAVIFS>
+    <label>XviD in AVI</label>
+    <acodec>libmp3lame</acodec>
+    <vcodec>libxvid</vcodec>
+    <channel>2</channel>
+    <frequency>48000</frequency>
+    <tag>XVID</tag>
+    <extension>avi</extension>
+    <category>AVI</category>
+  </XviDAVIFS>
+  
+  
+  <divx>
+    <label>MS Compatible AVI</label>
+     <acodec>libmp3lame</acodec>
+    <vcodec>msmpeg4</vcodec>
+    <channel>2</channel>
+    <frequency>48000</frequency>
+    <tag>MP43</tag>
+    <extension>avi</extension>
+    <category>AVI</category>
+  </divx>
+  
+  
+</presets>
