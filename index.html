@@ -8,20 +8,28 @@
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #4b2c20;
+background: rgb(253,251,249); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(253,251,249,1) 0%, rgba(235,233,229,1) 40%, rgba(206,206,200,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(253,251,249,1)), color-stop(40%,rgba(235,233,229,1)), color-stop(100%,rgba(206,206,200,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(253,251,249,1) 0%,rgba(235,233,229,1) 40%,rgba(206,206,200,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(253,251,249,1) 0%,rgba(235,233,229,1) 40%,rgba(206,206,200,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(253,251,249,1) 0%,rgba(235,233,229,1) 40%,rgba(206,206,200,1) 100%); /* IE10+ */
+background: radial-gradient(center, ellipse cover,  rgba(253,251,249,1) 0%,rgba(235,233,229,1) 40%,rgba(206,206,200,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfbf9', endColorstr='#cecec8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
       font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
+
     }
     #container {
       margin: 0 auto;
-      width: 700px;
+      width: 950px;
     }
-    h1 { font-size: 3.8em; color: #b4d3df; margin-bottom: 3px; }
+    h1 { font-size: 3.8em; color: #4abede; margin-bottom: 3px; }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #b4d3df; }
-    h3 { text-align: center; color: #b4d3df; }
-    a { color: #b4d3df; }
+    h2 { font-size: 1.5em; color: #4abede; }
+    h3 { text-align: center; color: #4abede; }
+    a { color: #4abede; }
     .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
     .download { float: right; }
     pre { background: #000; color: #fff; padding: 15px;}
@@ -36,14 +44,14 @@
   <div id="container">
 
     <div class="download">
-      <a href="https://github.com/Ale46/SITube-Downloader/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/Ale46/SITube-Downloader/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
+      <a href="https://github.com/downloads/Ale46/SITube-Downloader/SITube%20Downloader-win.zip">
+        <img border="0" width="90" src="http://eeepc901.altervista.org/blog/wp-content/uploads/2010/04/windows-64.png"></a>
+      <a href="https://github.com/downloads/Ale46/SITube-Downloader/SITube%20Downloader-all.zip">
+        <img border="0" width="90" src="http://wizfolio.com/Images1/multiOS.png?ver=2.0.0.20110201000005"></a>
     </div>
 
     <h1><a href="https://github.com/Ale46/SITube-Downloader">SITube-Downloader</a>
-      <span class="small">by <a href="https://github.com/Ale46">Ale46</a></span></h1>
+     </h1>
 
     <div class="description">
       Simple Youtube Downloader written in JAVA. Gives you the possibility to download and automatically convert, if you want, your video.
@@ -55,21 +63,38 @@
 
     
 
+      <h2>License</h2>
+      <p><a href="http://www.gnu.org/licenses/gpl.html">GPL</a></p>
     
 
     
       <h2>Authors</h2>
-      <p>Ale46<br/>      </p>
+      <p>Ale46
+   <a href="https://twitter.com/Ale467" class="twitter-follow-button" data-show-count="false">Follow @Ale467</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<br/>      <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/it_IT/i/scr/pixel.gif" width="1" height="1">
+</form>
+</p>
     
-
-    
-      <h2>Contact</h2>
-      <p> (ale467@gmail.com)<br/>      </p>
-    
-
+<h2>Screenshoot</h2>
+<p>
+<img src="http://i39.tinypic.com/2ikcetj.png" />
+</p>
     <h2>Download</h2>
+        <p>
+  You can download the compiled project for Linux\Mac<a href="https://github.com/downloads/Ale46/SITube-Downloader/SITube%20Downloader-all.zip">HERE</a>
+	</p>
+  <p>
+  You can download the compiled project for Windows<a href="https://github.com/downloads/Ale46/SITube-Downloader/SITube%20Downloader-win.zip">HERE</a>
+  </p>
+	<p>
     <p>
-      You can download this project in either
+      You can download this source project code in either
       <a href="https://github.com/Ale46/SITube-Downloader/zipball/master">zip</a> or
       <a href="https://github.com/Ale46/SITube-Downloader/tarball/master">tar formats.
     </p>
