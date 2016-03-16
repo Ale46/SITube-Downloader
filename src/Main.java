@@ -71,8 +71,8 @@ public class Main extends JFrame implements ActionListener, PropertyChangeListen
 	private ExtendedTextField txtUrl = null;
 	private JTextField txtSave = null;
 	private JButton cmdBrowse = null;
-	private JComboBox<String> cmbConvert = null;
-	private JComboBox<String> cmbSource = null;
+	private JComboBox cmbConvert = null;//changed
+	private JComboBox cmbSource = null;//changed
 	private JProgressBar jProgressBar = null;
 	private JLabel picture = null; 
 	private JButton cmdStart = null;
@@ -275,9 +275,10 @@ public class Main extends JFrame implements ActionListener, PropertyChangeListen
 	 * 	
 	 * @return javax.swing.JComboBox	
 	 */
-	private JComboBox<String> getCmbConvert() {
+	private JComboBox getCmbConvert()//changed 3
+	{
 		if (cmbConvert == null) {
-			cmbConvert = new JComboBox<String>();
+			cmbConvert = new JComboBox();
 			cmbConvert.setBounds(new Rectangle(402, 195, 161, 20));
 			cmbConvert.setToolTipText("Select the output format");
 			cmbConvert.setVisible(false);
@@ -297,8 +298,8 @@ public class Main extends JFrame implements ActionListener, PropertyChangeListen
 	private JComboBox<String> getCmbSource() {
 		
 		if (cmbSource == null) {
-			cmbSource = new JComboBox<String>();
-			cmbSource.setModel(new DefaultComboBoxModel<String>(new String[] {"3GP - 176x144", "FLV - 400x240", "FLV - 480x270", "FLV - 640x360", "FLV - 854x480", "MP4 - 640x360", "MP4 - 1280x720", "MP4 - 1920x1080", "MP4 - 4096x3072", "WEBM - 640x360", "WEBM - 854x480", "WEBM - 1280x720"}));
+			cmbSource = new JComboBox();
+			cmbSource.setModel(new DefaultComboBoxModel(new String[] {"3GP - 176x144", "FLV - 400x240", "FLV - 480x270", "FLV - 640x360", "FLV - 854x480", "MP4 - 640x360", "MP4 - 1280x720", "MP4 - 1920x1080", "MP4 - 4096x3072", "WEBM - 640x360", "WEBM - 854x480", "WEBM - 1280x720"}));
 			cmbSource.setBounds(481, 107, 149, 24);
 			cmbSource.setToolTipText("Select the quality of the Youtube Video");
 /*			HashMap<String,String> options = Youtube.fmtList;
